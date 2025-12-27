@@ -27,16 +27,19 @@ We analyzed the distribution of house prices to understand the market segment.
 *   **Normality**: The data deviates significantly from a normal distribution, with high kurtosis (heavy tails).
 *   **Modeling**: A stepwise linear regression identified **Bedrooms** as the most significant predictor of price ($R^2 \approx 0.39$).
 
-![Price Histogram](assets/image1.png)
 *Figure 1: Histogram of House Prices showing a right-skewed distribution.*
+
+![Price Histogram](assets/image1.png)
 
 ### 2. Browsing Time Analysis
 We examined how long users spend viewing photos (`Time Viewed`).
 *   **Distribution**: Extremely right-skewed. Most comparisons are brief (< 2s), but some extend significantly.
 *   **Fit**: The data follows an **Exponential Distribution** better than a Normal one, though extreme outliers exist.
 
-![Time Viewed Histogram](assets/image6.png)
 *Figure 2: Distribution of View Times.*
+
+![Time Viewed Histogram](assets/image6.png)
+
 
 ### 3. Engagement Modeling (Tags Analysis)
 To identify what drives engagement, we performed a backward stepwise regression on `Time Viewed` using dummy variables for photo content.
@@ -51,8 +54,10 @@ The analysis identified the following features as the strongest predictors of lo
 3.  **Living Areas**: Comfortable spaces (e.g., "Living-Couch", Fireplaces) drive interest.
 4.  **Bathrooms**: High-quality bathroom photos also retain attention.
 
-![AIC Analysis](assets/image13.png)
 *Figure 3: Stepwise Regression Analysis showing 'Floor' as the most significant variable.*
+
+![AIC Analysis](assets/image13.png)
+
 
 ### Recommended Photo Sequence
 Based on the data, we recommend the following photo order for new listings to maximize user retention:
